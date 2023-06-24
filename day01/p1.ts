@@ -13,9 +13,9 @@ const calorieCounting = (readGroups: string[]) => {
 };
 
 (async () => {
-  const example = await readFromFile("./example", true);
+  const example = await readFromFile("./example.txt", true);
   console.log(calorieCounting(example)); // 24000
 
-  const input = await readFromFile("./input", true);
+  const input = await readFromFile("./input.txt", true);
   console.log(calorieCounting(input)); // 66186
 })();

@@ -37,11 +37,11 @@ const cathodeRayTube = (readlines: string[]) => {
 };
 
 (async () => {
-  const example = await readFromFile("./example");
+  const example = await readFromFile("./example.txt");
   printSprite(cathodeRayTube(example));
 
   console.log();
 
-  const input = await readFromFile("./input");
+  const input = await readFromFile("./input.txt");
   printSprite(cathodeRayTube(input));
 })();

@@ -20,7 +20,7 @@ const tuningTrouble = (line: string) => {
 };
 
 (async () => {
-  const examples = await readFromFile("./example");
+  const examples = await readFromFile("./example.txt");
   const [exampleA, exampleB, exampleC, exampleD, exampleE] = examples;
   console.log(tuningTrouble(exampleA)); // 7
   console.log(tuningTrouble(exampleB)); // 5
@@ -28,6 +28,6 @@ const tuningTrouble = (line: string) => {
   console.log(tuningTrouble(exampleD)); // 10
   console.log(tuningTrouble(exampleE)); // 11
 
-  const [input] = await readFromFile("./input");
+  const [input] = await readFromFile("./input.txt");
   console.log(tuningTrouble(input)); // 1779
 })();

@@ -43,9 +43,9 @@ const cathodeRayTube = (readlines: string[]) => {
 };
 
 (async () => {
-  const example = await readFromFile("./example");
+  const example = await readFromFile("./example.txt");
   console.log(cathodeRayTube(example)); // 13140
 
-  const input = await readFromFile("./input");
+  const input = await readFromFile("./input.txt");
   console.log(cathodeRayTube(input)); // 15120
 })();

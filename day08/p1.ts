@@ -68,9 +68,9 @@ const treetopTreeHouse = (readlines: string[]) => {
 };
 
 (async () => {
-  const example = await readFromFile("./example");
+  const example = await readFromFile("./example.txt");
   console.log(treetopTreeHouse(example)); // 21
 
-  const input = await readFromFile("./input");
+  const input = await readFromFile("./input.txt");
   console.log(treetopTreeHouse(input)); // 1717
 })();

@@ -36,9 +36,9 @@ const rucksackReorganization = (readlines: string[]) => {
 };
 
 (async () => {
-  const example = await readFromFile("./example");
+  const example = await readFromFile("./example.txt");
   console.log(rucksackReorganization(example)); // 70
 
-  const input = await readFromFile("./input");
+  const input = await readFromFile("./input.txt");
   console.log(rucksackReorganization(input)); // 2604
 })();

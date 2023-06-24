@@ -74,9 +74,9 @@ const ropeBridge = (readlines: string[]) => {
 };
 
 (async () => {
-  const example = await readFromFile("./example");
+  const example = await readFromFile("./example.txt");
   console.log(ropeBridge(example)); // 13
 
-  const input = await readFromFile("./input");
+  const input = await readFromFile("./input.txt");
   console.log(ropeBridge(input)); // 6339
 })();

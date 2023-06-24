@@ -58,9 +58,9 @@ const noSpaceLeftOnDevice = (readlines: string[]) => {
 };
 
 (async () => {
-  const example = await readFromFile("./example");
+  const example = await readFromFile("./example.txt");
   console.log(noSpaceLeftOnDevice(example)); // 95437
 
-  const input = await readFromFile("./input");
+  const input = await readFromFile("./input.txt");
   console.log(noSpaceLeftOnDevice(input)); // 1428881
 })();

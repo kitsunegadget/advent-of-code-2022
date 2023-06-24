@@ -64,9 +64,9 @@ const supplyStacks = (readGroups: string[]) => {
 };
 
 (async () => {
-  const example = await readFromFile("./example", true);
+  const example = await readFromFile("./example.txt", true);
   console.log(supplyStacks(example)); // MCD
 
-  const input = await readFromFile("./input", true);
+  const input = await readFromFile("./input.txt", true);
   console.log(supplyStacks(input)); // CJVLJQPHS
 })();
