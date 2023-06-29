@@ -25,9 +25,7 @@ const sumArray = <T>(array: T[], processFn?: (arg: T) => number): number => {
     return array.reduce((acc, v) => acc + Number(v), 0);
   }
 
-  throw new Error(
-    "The array is not in a number or string. Use processFn if necessary."
-  );
+  throw new Error("The array is not in a number. Use processFn if necessary.");
 };
 
 };
