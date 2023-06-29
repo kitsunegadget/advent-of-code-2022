@@ -28,6 +28,20 @@ const sumArray = <T>(array: T[], processFn?: (arg: T) => number): number => {
   throw new Error("The array is not in a number. Use processFn if necessary.");
 };
 
+/** Calculate GCD */
+const gcd = (a: number, b: number): number => {
+  if (a < b) {
+    [a, b] = [b, a];
+  }
+  return a % b !== 0 ? gcd(b, a % b) : b;
+};
+
+/** Calculate LCM */
+const lcm = (a: number, b: number) => {
+  if (a < b) {
+    [a, b] = [b, a];
+  }
+  return (a * b) / gcd(a, b);
 };
 
 /** Manage coordinate or position */
@@ -64,4 +78,4 @@ class Coord {
   }
 }
 
-export { readFromFile, sumArray, Coord };
+export { readFromFile, sumArray, gcd, lcm, Coord };
