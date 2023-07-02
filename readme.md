@@ -23,4 +23,4 @@ Use [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.pretti
 
 ## Note
 
-day 15, day 19, day 22 については、実行時間を見直す必要があるため、まだ公開していません。
+day 15, day 19 については、実行時間を見直す必要があるため、まだ公開していません。
