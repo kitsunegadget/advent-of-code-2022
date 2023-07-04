@@ -20,7 +20,3 @@ Configure `.vscode/settings.json` for Code Runner
 Some parts include codes for visualization and may use ANSI escape code. However, VSCode output does not recognize ANSI escape code. Run the visualization code in a terminal with ts-node.
 
 Use [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) extension for code formatting.
-
-## Note
-
-day 19 については、実行時間を見直す必要があるため、まだ公開していません。
